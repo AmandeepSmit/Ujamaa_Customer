@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ah_badge"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/red_circle"
+    android:gravity="center"
+    android:text="0"
+    android:visibility="gone"
+    android:layout_marginStart="@dimen/_30sdp"
+    android:paddingVertical="@dimen/_3sdp"
+    android:textSize="@dimen/_8sdp"
+    android:paddingHorizontal="@dimen/_6sdp"
+    android:textColor="@color/white"
+    />

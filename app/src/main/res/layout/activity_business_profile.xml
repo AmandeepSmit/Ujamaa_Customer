@@ -1,0 +1,412 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activities.BusinessProfile">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/img1"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_150sdp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_top_image" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp">
+
+                <ImageView
+                    android:layout_width="@dimen/_24sdp"
+                    android:layout_height="@dimen/_24sdp"
+                    android:onClick="backBtnCick"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:src="@drawable/ic_back_arrow" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true">
+
+                    <ImageView
+                        android:id="@+id/bp_bookmarks"
+                        android:layout_width="@dimen/_16sdp"
+                        android:layout_height="@dimen/_18sdp"
+                        android:padding="@dimen/_6sdp"
+                        android:layout_gravity="center"/>
+
+                    <ImageView
+                        android:id="@+id/bp_share"
+                        android:layout_width="@dimen/_24sdp"
+                        android:layout_height="@dimen/_24sdp"
+                        android:layout_marginHorizontal="@dimen/_5sdp"
+                        android:padding="@dimen/_4sdp"
+                        android:onClick="bpShareClick"
+                        android:src="@drawable/ic_share"
+                        android:layout_gravity="center"/>
+
+                    <ImageView
+                        android:id="@+id/bp_more"
+                        android:layout_width="@dimen/_24sdp"
+                        android:layout_height="@dimen/_24sdp"
+                        android:padding="@dimen/_4sdp"
+                        android:visibility="gone"
+                        android:onClick="bpMoreBtnclick"
+                        android:src="@drawable/ic_more"
+                        android:layout_gravity="center"/>
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/img1"
+                android:background="@drawable/bp_shodow"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/profileTabLayout">
+
+                   <androidx.cardview.widget.CardView
+                       android:layout_width="0dp"
+                       android:layout_height="@dimen/_50sdp"
+                       android:layout_weight=".4"
+                       app:cardElevation="0dp"
+                       app:cardBackgroundColor="#00FFFFFF"
+                       app:cardCornerRadius="@dimen/_5sdp"
+                       android:layout_marginHorizontal="@dimen/_5sdp"
+                       >
+
+                       <ImageView
+                           android:id="@+id/profle_img"
+                           android:layout_width="match_parent"
+                           android:layout_height="@dimen/_50sdp"
+                           android:src="@drawable/ic_user_two" />
+                   </androidx.cardview.widget.CardView>
+
+                   <androidx.cardview.widget.CardView
+                       android:layout_width="0dp"
+                       android:layout_height="wrap_content"
+                       android:layout_weight="1"
+                       app:cardElevation="0dp"
+                       app:cardCornerRadius="@dimen/_5sdp"
+                       app:cardBackgroundColor="#00A57676"
+                       android:layout_marginEnd="@dimen/_10sdp">
+
+                       <LinearLayout
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:paddingVertical="@dimen/_5sdp"
+                           android:paddingHorizontal="@dimen/_7sdp"
+                           android:orientation="vertical">
+
+                           <TextView
+                               android:id="@+id/bp_name"
+                               android:layout_width="match_parent"
+                               android:layout_height="wrap_content"
+                               android:fontFamily="@font/adobe_clean_bold"
+                               android:text="Business name"
+                               android:textColor="@color/black"
+                               android:textSize="@dimen/_18sdp" />
+
+                           <TextView
+                               android:id="@+id/bp_summeryLine"
+                               android:layout_width="match_parent"
+                               android:layout_height="wrap_content"
+                               android:fontFamily="@font/adobe_clean_regular"
+                               android:text="@string/summery_line"
+                               android:textColor="@color/black"
+                               android:minLines="2"
+                               android:ellipsize="end"
+                               android:maxLines="2"
+                               android:textSize="@dimen/_10sdp"
+                               android:textStyle="italic" />
+                       </LinearLayout>
+                   </androidx.cardview.widget.CardView>
+
+                    <TextView
+                        android:id="@+id/tv_subscribe"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:layout_marginEnd="@dimen/_15sdp"
+                        android:background="@drawable/subscribe_bg"
+                        android:fontFamily="@font/adobe_clean_regular"
+                        android:paddingHorizontal="@dimen/_8sdp"
+                        android:paddingVertical="@dimen/_4sdp"
+                        android:text="SUBSCRIBE"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_10sdp" />
+                </LinearLayout>
+
+                <com.google.android.material.tabs.TabLayout
+                    android:id="@+id/profileTabLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_30sdp"
+                    android:background="@android:color/transparent"
+                    android:clipToPadding="true"
+                    android:focusableInTouchMode="true"
+                    android:minHeight="?attr/actionBarSize"
+                    android:textAlignment="center"
+                    android:textDirection="locale"
+                    android:theme="@style/Base.Widget.Design.TabLayout"
+                    app:tabBackground="@android:color/transparent"
+                    app:tabGravity="fill"
+                    app:tabIndicatorColor="@color/black"
+                    app:tabIndicatorHeight="@dimen/_2sdp"
+                    app:tabMode="fixed"
+                    app:tabSelectedTextColor="@color/black"
+                    app:tabTextAppearance="@style/TabTextSize"
+                    app:tabTextColor="@color/colorGray"
+                    android:layout_alignParentBottom="true"/>
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/blur_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/blur_bg_business_profile"
+        android:orientation="vertical"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/fab1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:layout_margin="@dimen/_10sdp"
+        android:layout_marginBottom="8dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:fontFamily="@font/adobe_clean_regular"
+            android:text="Message"
+            android:visibility="gone"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_10sdp" />
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_message_yellow"
+            android:tint="@android:color/transparent"
+            app:backgroundTint="@color/white"
+            app:elevation="@dimen/_1sdp"
+            android:visibility="gone"
+            app:useCompatPadding="true"
+            app:fabSize="mini" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/fab2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        android:layout_margin="@dimen/_10sdp"
+        android:layout_marginBottom="8dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:fontFamily="@font/adobe_clean_regular"
+            android:text="Add to List"
+            android:visibility="gone"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_10sdp" />
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_add_list"
+            android:tint="@android:color/transparent"
+            app:backgroundTint="@color/white"
+            android:visibility="gone"
+            app:elevation="@dimen/_1sdp"
+            app:useCompatPadding="true"
+            app:fabSize="mini" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/fab3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:layout_margin="@dimen/_10sdp"
+        android:layout_marginBottom="8dp">
+        <TextView
+            android:id="@+id/tv_bookmark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:fontFamily="@font/adobe_clean_regular"
+            android:text="Bookmark"
+            android:visibility="gone"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_10sdp" />
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:src="@drawable/ic_bookmark"
+            app:tint="@color/yellow_dark"
+            app:backgroundTint="@color/white"
+            app:elevation="@dimen/_1sdp"
+            app:useCompatPadding="true"
+            app:fabSize="mini" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/fab4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:layout_margin="@dimen/_10sdp"
+        android:layout_marginBottom="8dp">
+        <TextView
+            android:id="@+id/tv_float_subscribe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:fontFamily="@font/adobe_clean_regular"
+            android:text="Subscribe"
+            android:visibility="gone"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_10sdp" />
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/subscribe_new_ic"
+            android:tint="@android:color/transparent"
+            app:backgroundTint="@color/white"
+            android:visibility="gone"
+            app:elevation="@dimen/_1sdp"
+            app:useCompatPadding="true"
+            app:fabSize="mini" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/fab5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:layout_margin="@dimen/_10sdp"
+        android:layout_marginBottom="8dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:fontFamily="@font/adobe_clean_regular"
+            android:text="Review"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_10sdp" />
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_stars"
+            android:visibility="gone"
+            android:tint="@android:color/transparent"
+            app:backgroundTint="@color/white"
+            app:elevation="@dimen/_1sdp"
+            app:useCompatPadding="true"
+            app:fabSize="mini" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/fab6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:layout_marginBottom="8dp"
+        android:layout_margin="@dimen/_10sdp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:fontFamily="@font/adobe_clean_regular"
+            android:text="Share"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_10sdp" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_share_yellow"
+            android:tint="@android:color/transparent"
+            app:backgroundTint="@color/white"
+            android:visibility="gone"
+            app:elevation="@dimen/_1sdp"
+            app:useCompatPadding="true"
+            app:fabSize="mini" />
+    </LinearLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/baseFloatingActionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="6dp"
+        android:layout_marginEnd="@dimen/_6sdp"
+        android:src="@drawable/ic_add"
+        app:useCompatPadding="true"
+        android:elevation="@dimen/_1sdp"
+        android:tint="@android:color/transparent"
+        app:backgroundTint="@color/yellow_dark"
+        app:fabSize="mini"
+        app:tint="@color/white" />
+
+</RelativeLayout>

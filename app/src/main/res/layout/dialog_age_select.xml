@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/ageText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select Age"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_14sdp"
+        android:fontFamily="@font/adobe_clean_bold"
+        android:paddingVertical="@dimen/_8sdp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/dark_gray"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/ra_ageRecycler"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_300sdp"
+        android:layout_margin="@dimen/_5sdp"
+        tools:listitem="@layout/row_age">
+    </androidx.recyclerview.widget.RecyclerView>
+
+</LinearLayout>

@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#9A000000"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#00000000"
+        android:orientation="vertical"
+        >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:background="@android:color/transparent"
+            android:layout_marginHorizontal="@dimen/_10sdp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.84000003">
+
+                <ImageView
+                    android:id="@+id/img_dismiss"
+                    android:layout_width="@dimen/_22sdp"
+                    android:layout_height="@dimen/_22sdp"
+                    android:layout_gravity="end"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginEnd="@dimen/_5sdp"
+                    android:src="@drawable/ic_close"
+                    app:tint="@color/black" />
+
+                <TextView
+                    android:id="@+id/tv_business_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/_15sdp"
+                    android:fontFamily="@font/adobe_clean_bold"
+                    android:text="Business name"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_15sdp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/_15sdp"
+                    android:layout_marginVertical="@dimen/_10sdp">
+
+                    <RatingBar
+                        android:id="@+id/rv_rating"
+                        style="?android:attr/ratingBarStyleIndicator"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:isIndicator="false"
+                        android:stepSize="1"
+                        android:theme="@style/RatingBar" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:fontFamily="@font/adobe_clean_regular"
+                        android:gravity="center"
+                        android:text="Select your rating"
+                        android:textColor="@color/text_gray_color2"
+                        android:textSize="@dimen/_10sdp" />
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/et_comment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/_15sdp"
+                    android:background="@color/colorGrayComment"
+                    android:fontFamily="@font/adobe_clean_regular"
+                    android:gravity="start"
+                    android:hint="Leave a comment...."
+                    android:minLines="6"
+                    android:paddingStart="10dp"
+                    android:paddingTop="@dimen/_12sdp"
+                    android:textColorHint="@color/colorGray"
+                    android:textSize="@dimen/_11sdp"
+                    android:textStyle="italic" />
+
+                <LinearLayout
+                    android:id="@+id/load_img_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/_15sdp"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:paddingVertical="@dimen/_5sdp"
+                    android:background="@drawable/dotted_rect"
+                    android:gravity="center">
+                    <ImageView
+                        android:layout_width="@dimen/_22sdp"
+                        android:layout_height="@dimen/_22sdp"
+                        android:src="@drawable/ic_camera_two" />
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/img_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_50sdp"
+                    android:visibility="gone"
+                    android:background="@color/colorGrayComment"
+                    android:layout_marginHorizontal="@dimen/_15sdp"
+                    android:layout_marginVertical="@dimen/_10sdp">
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rec_imgs"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginRight="@dimen/_5sdp"
+                        android:layout_gravity="center_vertical"
+                        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                        />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/btn_post_review"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/_15sdp"
+                    android:layout_marginBottom="@dimen/_20sdp"
+                    android:background="@color/yellow"
+                    android:fontFamily="@font/adobe_clean_bold"
+                    android:gravity="center"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:paddingVertical="@dimen/_10sdp"
+                    android:text="Post Review"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_12sdp" />
+
+
+            </LinearLayout>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="invisible"
+            android:layout_marginHorizontal="@dimen/_12sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:background="@drawable/black_outline">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Reviewing during COVID-19"
+                android:textSize="@dimen/_12sdp"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:fontFamily="@font/adobe_clean_bold"
+                android:layout_marginHorizontal="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_8sdp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_15sdp"
+                android:gravity="center"
+                android:textSize="@dimen/_10sdp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/adobe_clean_regular"
+                android:lineSpacingExtra="@dimen/_6sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_marginBottom="@dimen/_15sdp"
+                android:text="Many businesses are doing their best during this unprecedented time. Thank you in advance for taking this into consideration if things did not go as planned."/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

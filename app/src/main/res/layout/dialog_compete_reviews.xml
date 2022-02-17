@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:paddingVertical="@dimen/_10sdp"
+    android:orientation="vertical">
+     <TextView
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:text="Thank you for reviewing\nthis business!"
+         android:gravity="center"
+         android:fontFamily="@font/adobe_clean_regular"
+         android:textColor="@color/black"
+         android:textSize="@dimen/_11sdp"
+         android:padding="@dimen/_5sdp"
+         />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Share your review"
+        android:gravity="center"
+        android:visibility="gone"
+        android:fontFamily="@font/adobe_clean_bold"
+        android:textColor="@color/colorDarkSkyBlue"
+        android:textSize="@dimen/_11sdp"
+        />
+
+    <TextView
+        android:id="@+id/btnBack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Back"
+        android:layout_marginHorizontal="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:gravity="center"
+        android:padding="@dimen/_8sdp"
+        android:background="#EBEBEB"
+        android:textColor="@color/black"
+        />
+
+
+</LinearLayout>

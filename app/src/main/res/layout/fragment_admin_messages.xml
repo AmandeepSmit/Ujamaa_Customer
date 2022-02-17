@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.AdminMessagesFragment">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/adm_RecyeclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager">
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <TextView
+        android:id="@+id/adm_noMessgage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="No message available"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_12sdp"
+        android:visibility="gone"
+        android:fontFamily="@font/adobe_clean_regular"/>
+
+</LinearLayout>

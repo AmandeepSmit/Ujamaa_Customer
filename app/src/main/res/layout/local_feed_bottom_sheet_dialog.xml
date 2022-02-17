@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/review_bottom_sheet"
+    android:background="@android:color/transparent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior"
+    android:fitsSystemWindows="true"
+    app:behavior_hideable="true"
+    app:behavior_peekHeight="0dp"
+    android:paddingBottom="@dimen/_15sdp"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="@dimen/_10sdp"
+        android:layout_marginHorizontal="@dimen/_10sdp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#BFBFBF"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/layout_hide_post"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:background="@color/white"
+                android:paddingVertical="@dimen/_7sdp"
+                android:paddingHorizontal="@dimen/_11sdp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:src="@drawable/ic_is_hide"
+                    app:tint="@color/black"
+                    />
+                <TextView
+                    android:id="@+id/tv_post_type"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Hide Post"
+                    android:fontFamily="@font/adobe_clean_regular"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_13sdp"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_report"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:background="@color/white"
+                android:layout_marginTop="1dp"
+                android:paddingVertical="@dimen/_7sdp"
+                android:paddingHorizontal="@dimen/_11sdp"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:src="@drawable/ic_thumb"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Unsubscribe from Business"
+                    android:fontFamily="@font/adobe_clean_regular"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_13sdp"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_visit_profile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:background="@color/white"
+                android:layout_marginTop="1dp"
+                android:paddingVertical="@dimen/_7sdp"
+                android:paddingHorizontal="@dimen/_11sdp"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:src="@drawable/ic_other_profile"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Visit Profile"
+                    android:fontFamily="@font/adobe_clean_regular"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_13sdp"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    />
+
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:id="@+id/tv_cancel_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="@dimen/_10sdp"
+        app:cardBackgroundColor="@color/yellow"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginHorizontal="@dimen/_10sdp"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cancel"
+            android:padding="@dimen/_10sdp"
+            android:gravity="center"
+            android:textSize="@dimen/_13sdp"
+            android:textColor="@color/black"
+            />
+    </androidx.cardview.widget.CardView>
+
+
+</LinearLayout>

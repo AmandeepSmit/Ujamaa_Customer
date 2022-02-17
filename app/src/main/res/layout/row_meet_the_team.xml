@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    >
+
+   <LinearLayout
+       android:layout_width="0dp"
+       android:layout_height="wrap_content"
+       android:layout_weight="1"
+       android:orientation="vertical"
+       >
+
+       <ImageView
+           android:id="@+id/rmt_image1"
+           android:layout_gravity="center"
+           android:layout_width="@dimen/_70sdp"
+           android:layout_height="@dimen/_70sdp"/>
+
+       <TextView
+           android:id="@+id/rmt_name1"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:text="Name"
+           android:textSize="@dimen/_12sdp"
+           android:gravity="center"
+           android:fontFamily="@font/adobe_clean_regular"
+           android:layout_marginTop="@dimen/_5sdp"/>
+
+       <TextView
+           android:id="@+id/rmt_role1"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:text="Role"
+           android:textSize="@dimen/_12sdp"
+           android:gravity="center"
+           android:fontFamily="@font/adobe_clean_regular"
+           android:textStyle="italic"
+           android:layout_marginTop="@dimen/_5sdp"
+           />
+
+   </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:orientation="vertical"
+        >
+
+        <ImageView
+            android:id="@+id/rmt_image2"
+            android:layout_width="@dimen/_70sdp"
+            android:layout_gravity="center"
+            android:layout_height="@dimen/_70sdp"/>
+
+        <TextView
+            android:id="@+id/rmt_name2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            android:textSize="@dimen/_12sdp"
+            android:gravity="center"
+            android:fontFamily="@font/adobe_clean_regular"
+            android:layout_marginTop="@dimen/_5sdp"/>
+
+        <TextView
+            android:id="@+id/rmt_role2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Role"
+            android:textSize="@dimen/_12sdp"
+            android:gravity="center"
+            android:fontFamily="@font/adobe_clean_regular"
+            android:textStyle="italic"
+            android:layout_marginTop="@dimen/_5sdp"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/rmt_image"
+            android:layout_width="@dimen/_70sdp"
+            android:layout_gravity="center"
+            android:layout_height="@dimen/_70sdp"/>
+
+        <TextView
+            android:id="@+id/rmt_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            android:textSize="@dimen/_12sdp"
+            android:gravity="center"
+            android:fontFamily="@font/adobe_clean_regular"
+            android:layout_marginTop="@dimen/_5sdp"/>
+
+        <TextView
+            android:id="@+id/rmt_role"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Role"
+            android:textSize="@dimen/_12sdp"
+            android:gravity="center"
+            android:fontFamily="@font/adobe_clean_regular"
+            android:textStyle="italic"
+            android:layout_marginTop="@dimen/_5sdp"
+            />
+
+    </LinearLayout>
+
+
+</LinearLayout>

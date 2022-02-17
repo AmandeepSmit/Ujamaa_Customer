@@ -1,0 +1,70 @@
+<resources>
+    <string name="app_name">UJAMAA Online</string>
+
+    <string name="cancel_str">Cancel</string>
+    <string name="submit">Submit</string>
+    <string name="ok">OK</string>
+    <string name="reallyExit">Do you really want to exit?</string>
+    <string name="are_you_sure_you_want_to_logout">Are you sure you want to Logout?</string>
+    <string name="no_internet_label">Internet Not Available</string>
+    <string name="check_your_connection">Please check your connection.</string>
+    <string name="go_settings">Go Settings</string>
+    <string name="no_net_connection">Internet Not Available, Please check your connection.</string>
+    <string name="under_maintenance">Server is under maintenance</string>
+    <string name="turn_on_location">To continue, turn on device location, which uses Google\'s location service</string>
+
+    <string name="by_signing_up">By signing up, you agree to our <font fgcolor="#339ECD">terms</font> and <font fgcolor="#339ECD">privacy policy</font></string>
+
+    <string name="skip">Skip</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="have_an_account">Have an account? Sign in</string>
+    <string name="password">Password</string>
+    <string name="forgot_your_password">Forgot your password?</string>
+    <string name="sign_in">Sign in</string>
+    <string name="cancel">Cancel</string>
+    <string name="done">Done</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="email_address">Email Address</string>
+    <string name="by_continue_you_agree">By continuing, you agree to UJAMAA Online\'s <font fgcolor="#1CB1FF">terms of use</font>  and acknowledge UJAMAA Online\'s <font fgcolor="#1CB1FF">privacy policy.</font></string>
+    <string name="choose_a_password">Choose a password</string>
+    <string name="postcode">Postcode</string>
+    <string name="age">Age</string>
+    <string name="gender">Gender</string>
+    <string name="phone_number_optional">Phone number (optional)</string>
+    <string name="valid_email">Please enter valid email</string>
+    <string name="please_enter_email_id">Please enter email id</string>
+    <string name="please_enter_password">Please enter password</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="other">Other:</string>
+    <string name="enter_your_gender_identity_optional">Enter your gender identity (optional)</string>
+    <string name="please_enter_first_name">Please enter first name</string>
+    <string name="please_enter_last_name">Please enter last name</string>
+    <string name="please_enter_postcode">Please enter postcode</string>
+    <string name="select_date_of_birth">Select date of birth</string>
+    <string name="please_select_gender">Please select your gender</string>
+    <string name="please_choose_image">Please select profile image</string>
+    <string name="welcome">Welcome</string>
+    <string name="ujamaaonline"><b>UJAMAA</b>ONLINE</string>
+    <string name="home">Home</string>
+    <string name="search">Image search</string>
+    <string name="feed">Feed</string>
+    <string name="me">Me</string>
+    <string name="message">Message</string>
+    <string name="search_for_anything_and_everything_by_keyword_or_hashtag">Search for anything and everything by keyword or hashtag!</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="summery_line">Summary line</string>
+    <string name="read_more"><b>Readmore</b></string>
+    <string name="read_less">Readless</string>
+    <string name="why_are_you_reporting_this_review">Why are you reporting this review ? <font color="#F0403C">*</font></string>
+
+    <string name="subscriberPostTtitle">Subscriber \nFeed</string>
+    <string name="localFeedPost">Local \nFeed </string>
+    <string name="eventPost">Upcoming \nEvents</string>
+    <string name="b_8_b_shares">8 Shares</string>
+    <string name="_3_likes"><b>3</b> Likes</string>
+    <string name="ujamaaonlineabout"><b>UJAMAA</b>ONLINE</string>
+
+</resources>

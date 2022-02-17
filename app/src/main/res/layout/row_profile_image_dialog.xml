@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <com.ujamaaonline.customer.utils.TouchImageView
+        android:id="@+id/iv_profile_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        android:background="@color/black"
+        android:focusable="true"
+        android:scaleType="centerInside"/>
+
+    <ImageView
+        android:id="@+id/iv_play_video"
+        android:layout_width="@dimen/_40sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:contentDescription="@null"
+        android:layout_centerInParent="true"
+        android:src="@drawable/exo_controls_play"
+        android:visibility="gone"/>
+
+</RelativeLayout>

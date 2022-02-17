@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/_5sdp"
+    android:background="@color/white"
+    android:layout_marginVertical="@dimen/_5sdp"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_10sdp"
+            android:orientation="horizontal">
+            <ImageView
+                android:id="@+id/user_img"
+                android:layout_width="@dimen/_35sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:src="@drawable/ic_user_two"/>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_marginHorizontal="@dimen/_10sdp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/tv_user_name"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/adobe_clean_regular"
+                        android:textColor="@color/black"
+                        android:text="Johan Doe"
+                        />
+                    <ImageView
+                        android:id="@+id/doted_btn"
+                        android:layout_width="@dimen/_15sdp"
+                        android:layout_height="15dp"
+                        android:src="@drawable/ic_menu_profile_reviews" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/business_summery_line"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:maxLines="2"
+                        android:ellipsize="end"
+                        android:fontFamily="@font/adobe_clean_regular"
+                        android:textStyle="italic"
+                        android:textColor="@color/black"
+                        android:text="summery line"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/tv_description"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_4sdp"
+                        android:ellipsize="end"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/adobe_clean_regular"
+                        />
+                    <TextView
+                        android:id="@+id/tv_read_more"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:text="read more"
+                        android:visibility="gone"
+                        android:layout_gravity="bottom"
+                        android:fontFamily="@font/adobe_clean_bold"
+                        />
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1sdp"
+        android:background="#C9C9C9"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/img_user"
+                    android:layout_width="@dimen/_25sdp"
+                    android:layout_height="@dimen/_25sdp"
+                    android:background="#696666"
+                    />
+                <TextView
+                    android:id="@+id/tv_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:visibility="gone"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/adobe_clean_regular"
+                    android:layout_centerInParent="true"
+                    android:textSize="@dimen/_12sdp"
+                    android:text="M"
+                    />
+
+            </RelativeLayout>
+
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:orientation="vertical">
+
+             <TextView
+                 android:id="@+id/tv_customer_name"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:text="Full name (you)"
+                 android:textColor="#696666"
+                 android:layout_gravity="center_vertical"
+                 android:layout_marginStart="@dimen/_10sdp"
+                 />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <RatingBar
+                    android:id="@+id/user_rating"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleY="0.8"
+                    android:layout_marginStart="-10dp"
+                    android:scaleX="0.8"
+                    android:progressTint="@color/yellow"
+                    style="?android:attr/ratingBarStyleIndicator"
+                    />
+                <TextView
+                    android:id="@+id/tv_time_ago"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="1 hour ago"
+                    android:textColor="#696666"
+                    android:gravity="end"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    />
+
+
+            </LinearLayout>
+             <TextView
+                 android:id="@+id/customer_desc"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_marginTop="@dimen/_5sdp"
+                 android:text="the customers comment if one was made first 3 lines ."
+                 android:textColor="@color/black"
+                 android:layout_gravity="center_vertical"
+                 android:layout_marginStart="@dimen/_10sdp"
+                 />
+
+         </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+
+
+
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/useful_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginHorizontal="@dimen/_10sdp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:background="@color/purple_200"
+            android:layout_gravity="end">
+
+
+
+            <TextView
+                android:id="@+id/tv_useful"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="8 people found this review useful"
+                android:gravity="center"
+                android:drawablePadding="@dimen/_2sdp"
+                android:paddingVertical="@dimen/_5sdp"
+                android:paddingHorizontal="@dimen/_5sdp"
+                android:textSize="@dimen/_12sdp"
+                android:fontFamily="@font/glacial_regular"
+                android:textColor="@color/black"
+                />
+
+        </LinearLayout>
+
+
+
+
+</LinearLayout>

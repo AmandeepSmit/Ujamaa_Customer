@@ -1,0 +1,398 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_bg"
+    android:orientation="vertical"
+    tools:context=".activities.ActivityEventDetail">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_200sdp"
+            android:layout_marginTop="@dimen/_15sdp">
+
+            <ImageView
+                android:id="@+id/post_img"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#E6E6E6"
+                android:scaleType="centerCrop"
+                android:src="@drawable/no_image_business" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:onClick="backBtnCick"
+                    android:layout_width="@dimen/_24sdp"
+                    android:layout_height="@dimen/_24sdp"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:src="@drawable/ic_back_arrow" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_gravity="end">
+
+                    <ImageView
+                        android:id="@+id/bp_bookmarks"
+                        android:layout_width="@dimen/_18sdp"
+                        android:layout_height="@dimen/_18sdp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_heart"
+                        app:tint="@color/black" />
+
+                    <ImageView
+                        android:id="@+id/bp_share"
+                        android:layout_width="@dimen/_24sdp"
+                        android:layout_height="@dimen/_24sdp"
+                        android:layout_gravity="center"
+                        android:layout_marginHorizontal="@dimen/_5sdp"
+                        android:padding="@dimen/_4sdp"
+                        android:src="@drawable/ic_share" />
+
+                    <ImageView
+                        android:id="@+id/bp_more"
+                        android:layout_width="@dimen/_24sdp"
+                        android:layout_height="@dimen/_24sdp"
+                        android:layout_gravity="center"
+                        android:padding="@dimen/_4sdp"
+                        android:src="@drawable/ic_more" />
+                </LinearLayout>
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/_10sdp">
+
+            <TextView
+                android:id="@+id/tv_event_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Online event"
+                android:fontFamily="@font/adobe_clean_regular"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:textSize="@dimen/_12sdp"
+                android:layout_centerVertical="true"/>
+
+            <TextView
+                android:layout_width="@dimen/_24sdp"
+                android:layout_height="@dimen/_24sdp"
+                android:text="21+"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_9sdp"
+                android:fontFamily="@font/adobe_clean_regular"
+                android:background="@drawable/back_circle"
+                android:padding="@dimen/_4sdp"
+                android:gravity="center"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:layout_marginVertical="@dimen/_5sdp"/>
+
+        </RelativeLayout>
+        <TextView
+            android:id="@+id/tv_event_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Event Title"
+            android:layout_marginHorizontal="@dimen/_10sdp"
+            android:fontFamily="@font/adobe_clean_bold"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_16sdp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/_10sdp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="By: "
+                android:fontFamily="@font/adobe_clean_regular"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:textSize="@dimen/_12sdp"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:textColor="@color/black"/>
+
+            <ImageView
+                android:id="@+id/img_busness"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_24sdp"
+                android:layout_marginHorizontal="@dimen/_2sdp"
+                android:src="@drawable/ic_placeholder_user" />
+
+            <TextView
+                android:id="@+id/tv_business_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Business Name "
+                android:fontFamily="@font/adobe_clean_regular"
+                android:layout_marginStart="@dimen/_4sdp"
+                android:textSize="@dimen/_12sdp"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/tv_subscribe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SUBSCRIBE"
+                android:fontFamily="@font/adobe_clean_regular"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:textSize="@dimen/_12sdp"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:textColor="@color/white"
+                android:background="@drawable/red_background"
+                android:paddingHorizontal="@dimen/_5sdp"
+                android:paddingVertical="@dimen/_2sdp"
+                />
+        </LinearLayout>
+        <TextView
+            android:id="@+id/btn_get_ticket"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Get Ticket"
+            android:fontFamily="@font/adobe_clean_regular"
+            android:layout_marginStart="@dimen/_4sdp"
+            android:textSize="@dimen/_13sdp"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:layout_margin="@dimen/_20sdp"
+            android:paddingVertical="@dimen/_10sdp"
+            android:background="@drawable/white_round_bg"
+            android:elevation="@dimen/_5sdp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/_10sdp">
+
+            <ImageView
+                android:layout_width="@dimen/_24sdp"
+                android:layout_height="@dimen/_24sdp"
+                android:text="Online event"
+                android:fontFamily="@font/adobe_clean_regular"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:textSize="@dimen/_12sdp"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_calender"
+                android:padding="@dimen/_4sdp"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_event_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Date \n full time of event"
+                    android:fontFamily="@font/adobe_clean_regular"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:textSize="@dimen/_12sdp"
+                    android:gravity="center"
+                    android:layout_centerVertical="true"
+                    android:lineSpacingExtra="@dimen/_4sdp"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Add to calender"
+                    android:fontFamily="@font/adobe_clean_regular"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:textSize="@dimen/_12sdp"
+                    android:gravity="center"
+                    android:layout_centerVertical="true"
+                    android:lineSpacingExtra="@dimen/_4sdp"
+                    android:textColor="@color/blue_light"
+                    android:layout_marginTop="@dimen/_4sdp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/_10sdp">
+
+            <ImageView
+                android:layout_width="@dimen/_24sdp"
+                android:layout_height="@dimen/_24sdp"
+                android:text="Online event"
+                android:fontFamily="@font/adobe_clean_regular"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:textSize="@dimen/_12sdp"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_location"
+                android:padding="@dimen/_2sdp"
+                app:tint="@color/black"/>
+
+
+            <TextView
+                android:id="@+id/service_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="address/ location not available yet"
+                android:fontFamily="@font/adobe_clean_regular"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:textSize="@dimen/_12sdp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_centerVertical="true"
+                android:lineSpacingExtra="@dimen/_4sdp"
+                android:textColor="@color/black"/>
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/_10sdp">
+
+            <TextView
+                android:layout_width="@dimen/_24sdp"
+                android:layout_height="@dimen/_24sdp"
+                android:text="£"
+                android:gravity="center"
+                android:fontFamily="@font/adobe_clean_bold"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:textSize="@dimen/_20sdp"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/tv_event_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:fontFamily="@font/adobe_clean_regular"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:textSize="@dimen/_12sdp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_centerVertical="true"
+                android:lineSpacingExtra="@dimen/_4sdp"
+                android:textColor="@color/black"/>
+        </LinearLayout>
+        <TextView
+            android:id="@+id/tv_event_title_secnd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Event Title"
+            android:fontFamily="@font/adobe_clean_bold"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:textSize="@dimen/_20sdp"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:textColor="@color/black"
+            android:layout_marginTop="@dimen/_10sdp"/>
+        <TextView
+            android:id="@+id/tv_event_desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy and typesetting industry."
+            android:fontFamily="@font/adobe_clean_regular"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:textSize="@dimen/_12sdp"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:textColor="@color/black"
+            android:layout_marginTop="@dimen/_10sdp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="@dimen/_15sdp"
+            >
+
+           <androidx.cardview.widget.CardView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               app:cardCornerRadius="@dimen/_2sdp"
+               >
+               <ImageView
+                   android:id="@+id/event_img"
+                   android:layout_width="@dimen/_40sdp"
+                   android:layout_height="@dimen/_40sdp"
+                   android:layout_gravity="center_horizontal"
+                   android:src="@drawable/ic_user_two"/>
+
+           </androidx.cardview.widget.CardView>
+            <TextView
+                android:id="@+id/tv_business_name2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Business name"
+                android:textColor="@color/black"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:fontFamily="@font/adobe_clean_bold"
+                android:textSize="@dimen/_15sdp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Organiser"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:fontFamily="@font/adobe_clean_regular"
+                android:textSize="@dimen/_11sdp"
+                />
+            <TextView
+                android:id="@+id/tv_business_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_10sdp"
+                android:text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy and typesetting industry..."
+                android:layout_marginTop="@dimen/_5sdp"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:fontFamily="@font/adobe_clean_regular"
+                android:textSize="@dimen/_11sdp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Visit profile"
+                android:onClick="visitProfileClick"
+                android:textColor="#2598CB"
+                android:layout_marginBottom="@dimen/_30sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:fontFamily="@font/adobe_clean_regular"
+                android:textSize="@dimen/_13sdp"
+                />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

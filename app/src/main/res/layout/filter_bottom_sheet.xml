@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/filter_bottom_sheet"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/bg_bottom_sheet"
+    android:paddingHorizontal="@dimen/_14sdp"
+    app:behavior_hideable="false"
+    app:behavior_peekHeight="0dp"
+    app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior"
+    android:paddingBottom="@dimen/_10sdp">
+
+    <View
+        android:layout_width="@dimen/_65sdp"
+        android:layout_height="@dimen/_2sdp"
+        android:background="@color/color_views"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/_5sdp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Filter"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_18sdp"
+        android:fontFamily="@font/glacial_bold"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:paddingStart="@dimen/_5sdp" />
+
+    <LinearLayout
+        android:id="@+id/fl_allMsgLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:paddingTop="@dimen/_8sdp"
+        android:paddingBottom="@dimen/_3sdp">
+
+        <ImageView
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:src="@drawable/ic_email"
+            android:layout_marginStart="@dimen/_5sdp"
+            app:tint="@color/black"
+            android:padding="@dimen/_1sdp"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="All Messages"
+            android:textSize="@dimen/_12sdp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/black"
+            android:fontFamily="@font/adobe_clean_regular"
+            android:layout_marginStart="@dimen/_5sdp"/>
+
+        <ImageView
+            android:id="@+id/fl_tickMsg"
+            android:layout_width="28dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_check_yellow"
+            android:visibility="gone"
+            android:padding="@dimen/_2sdp"/>
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/color_views" />
+
+    <LinearLayout
+        android:id="@+id/fl_starLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:paddingTop="@dimen/_8sdp"
+        android:paddingBottom="@dimen/_3sdp">
+        <ImageView
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:src="@drawable/ic_star"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:padding="@dimen/_1sdp"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Starred"
+            android:textSize="@dimen/_12sdp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/black"
+            android:fontFamily="@font/adobe_clean_regular"
+            android:layout_marginStart="@dimen/_5sdp"/>
+        <ImageView
+            android:id="@+id/fl_tickStarred"
+            android:layout_width="28dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_check_yellow"
+            android:visibility="gone"
+            android:padding="@dimen/_2sdp"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/color_views" />
+
+    <LinearLayout
+        android:id="@+id/fl_archiveLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:paddingTop="@dimen/_8sdp"
+        android:paddingBottom="@dimen/_3sdp">
+        <ImageView
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:src="@drawable/ic_archive"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:padding="@dimen/_1sdp"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Archive"
+            android:layout_weight="1"
+            android:textSize="@dimen/_12sdp"
+            android:gravity="center_vertical"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/black"
+            android:fontFamily="@font/adobe_clean_regular"
+            android:layout_marginStart="@dimen/_5sdp"/>
+        <ImageView
+            android:id="@+id/fl_tickArchive"
+            android:layout_width="28dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_check_yellow"
+            android:visibility="gone"
+            android:padding="@dimen/_2sdp"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/color_views"
+        />
+    <LinearLayout
+        android:id="@+id/fl_unreadLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:paddingTop="@dimen/_8sdp"
+        android:paddingBottom="@dimen/_3sdp">
+
+        <ImageView
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:src="@drawable/ic_unread"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:padding="@dimen/_1sdp"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Unread"
+            android:textSize="@dimen/_12sdp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/black"
+            android:fontFamily="@font/adobe_clean_regular"
+            android:layout_marginStart="@dimen/_5sdp"/>
+
+        <ImageView
+            android:id="@+id/fl_tickUnread"
+            android:layout_width="28dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_check_yellow"
+            android:visibility="gone"
+            android:padding="@dimen/_2sdp"/>
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/color_views"
+        android:layout_marginBottom="@dimen/_30sdp"/>
+
+
+</LinearLayout>

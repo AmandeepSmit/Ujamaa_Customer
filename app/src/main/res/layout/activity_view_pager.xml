@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/pager_bg"
+    android:orientation="vertical"
+    tools:context=".activities.ViewPagerActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.5"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/iv_back"
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_25sdp"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:visibility="gone"
+                android:contentDescription="@null"
+                android:src="@drawable/ic_back_arrow"/>
+            <TextView
+                android:id="@+id/tvSkip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:layout_marginEnd="@dimen/_15sdp"
+                android:fontFamily="@font/adobe_clean_regular"
+                android:text="@string/skip"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_14sdp" />
+
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_35sdp"
+            android:layout_marginHorizontal="@dimen/_30sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:background="@drawable/app_logo"
+            android:contentDescription="@null" />
+
+    </LinearLayout>
+
+<!--    <TableLayout-->
+<!--        android:id="@+id/dotsIndicator"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="@dimen/_40sdp"-->
+<!--        android:layout_marginTop="-40dp"-->
+<!--        app:dot_drawable="@drawable/selected_dot"-->
+<!--        app:dot_drawable_unselected="@drawable/un_selected_dot" />-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:layout_weight=".45"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/sliding_tabs"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_25sdp"
+            app:tabBackground="@drawable/indicator_selector"
+            app:tabIndicatorHeight="0dp"
+            android:layout_marginTop="-10dp"
+            android:paddingBottom="@dimen/_10sdp"
+            app:tabGravity="center"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_account"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".50"
+        android:orientation="vertical"
+        android:visibility="invisible">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvSignUp"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_38sdp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginHorizontal="@dimen/_15sdp"
+                android:background="@drawable/button_shape_yellow"
+                android:fontFamily="@font/adobe_clean_regular"
+                android:gravity="center"
+                android:padding="@dimen/_6sdp"
+                android:scrollHorizontally="true"
+                android:text="@string/sign_up"
+                android:textAllCaps="false"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/_14sdp" />
+
+            <TextView
+                android:id="@+id/tv_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvSignUp"
+                android:layout_marginHorizontal="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:fontFamily="@font/adobe_clean_regular"
+                android:lineSpacingExtra="@dimen/_3sdp"
+                android:text="@string/by_signing_up"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_11sdp" />
+
+            <TextView
+                android:id="@+id/tvSignIn"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_38sdp"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/button_shape_gray"
+                android:fontFamily="@font/adobe_clean_regular"
+                android:gravity="center"
+                android:padding="@dimen/_6sdp"
+                android:text="@string/have_an_account"
+                android:textAllCaps="false"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/_14sdp" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

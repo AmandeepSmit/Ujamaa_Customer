@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@android:color/transparent"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_40sdp"
+        android:layout_marginBottom="@dimen/_5sdp"
+        android:layout_marginVertical="@dimen/_5sdp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/user_img"
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_gravity="bottom"
+            android:src="@drawable/main_squire_logo"
+            android:layout_marginHorizontal="@dimen/_5sdp"
+            android:elevation="@dimen/_3sdp"
+            />
+
+        <LinearLayout
+            android:id="@+id/receiver_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginVertical="@dimen/_3sdp"
+            android:layout_marginHorizontal="@dimen/_3sdp"
+            android:background="@drawable/left_chat_bg"
+            android:padding="@dimen/_5sdp"
+            android:elevation="@dimen/_3sdp"
+            >
+
+            <TextView
+                android:id="@+id/rm_rcMsg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/_12sdp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/adobe_clean_regular"
+                android:layout_marginHorizontal="@dimen/_5sdp"
+                />
+
+            <ImageView
+                android:id="@+id/rm_rcImage"
+                android:layout_width="@dimen/_150sdp"
+                android:scaleType="centerCrop"
+                android:layout_height="@dimen/_150sdp"
+                android:visibility="gone"/>
+
+            <com.google.android.gms.maps.MapView
+                android:id="@+id/rm_rcMapView"
+                android:layout_width="@dimen/_150sdp"
+                android:layout_height="@dimen/_150sdp"
+                android:visibility="gone"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginTop="@dimen/_5sdp">
+
+                <TextView
+                    android:id="@+id/rm_rcDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/_8sdp"
+                    android:fontFamily="@font/adobe_clean_regular"
+                    android:layout_marginHorizontal="@dimen/_5sdp"/>
+
+                <!--            <TextView-->
+                <!--                android:id="@+id/rm_rcTime"-->
+                <!--                android:layout_width="wrap_content"-->
+                <!--                android:layout_height="wrap_content"-->
+                <!--                android:text="12:00"-->
+                <!--                android:textSize="@dimen/_10sdp"-->
+                <!--                android:fontFamily="@font/adobe_clean_regular"/>-->
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/sender_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/right_chat_bg"
+        android:padding="@dimen/_5sdp"
+        android:elevation="@dimen/_3sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:layout_marginStart="@dimen/_70sdp"
+        android:layout_gravity="end"
+        android:layout_marginBottom="@dimen/_5sdp">
+
+        <TextView
+            android:id="@+id/rm_sdMsg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_12sdp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/adobe_clean_regular"
+            android:layout_marginHorizontal="@dimen/_5sdp"
+            android:layout_gravity="end"
+            android:lineSpacingExtra="@dimen/_4sdp"/>
+
+        <ImageView
+            android:id="@+id/rm_sdImage"
+            android:layout_width="@dimen/_150sdp"
+            android:scaleType="centerCrop"
+            android:layout_height="@dimen/_150sdp"
+            android:visibility="gone"/>
+
+        <com.google.android.gms.maps.MapView
+            android:id="@+id/rm_sdMapView"
+            android:layout_width="@dimen/_150sdp"
+            android:layout_height="@dimen/_150sdp"
+            android:visibility="gone"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_gravity="end">
+
+            <TextView
+                android:id="@+id/rm_sdDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/_8sdp"
+                android:fontFamily="@font/adobe_clean_regular"
+                />
+
+            <!--            <TextView-->
+            <!--                android:id="@+id/rm_sdTime"-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:text="12:00"-->
+            <!--                android:textSize="@dimen/_10sdp"-->
+            <!--                android:fontFamily="@font/adobe_clean_regular"/>-->
+
+            <ImageView
+                android:id="@+id/rm_sdTick"
+                android:layout_width="@dimen/_12sdp"
+                android:layout_height="@dimen/_8sdp"
+                android:layout_marginHorizontal="@dimen/_5sdp" />
+
+        </LinearLayout>
+        </LinearLayout>
+
+</LinearLayout>

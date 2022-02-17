@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingBottom="@dimen/_15sdp"
+    app:layout_behavior="@string/bottom_sheet_behavior"
+    android:fitsSystemWindows="true"
+    app:behavior_hideable="false"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="@dimen/_10sdp"
+        android:layout_marginHorizontal="@dimen/_10sdp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#BFBFBF"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/dcm_flagLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:background="@color/white"
+                android:paddingVertical="@dimen/_7sdp"
+                android:paddingHorizontal="@dimen/_11sdp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:src="@drawable/ic_star"
+                    app:tint="@color/black"
+                    android:padding="@dimen/_2sdp"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_most_recent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Star"
+                    android:fontFamily="@font/adobe_clean_regular"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_13sdp"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/dcm_markLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:background="@color/white"
+                android:layout_marginTop="1dp"
+                android:paddingVertical="@dimen/_7sdp"
+                android:paddingHorizontal="@dimen/_11sdp"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:src="@drawable/ic_unread"
+                    android:padding="@dimen/_2sdp"/>
+
+                <TextView
+                    android:id="@+id/dcm_readTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Mark Unread"
+                    android:fontFamily="@font/adobe_clean_regular"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_13sdp"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/dcm_archiveLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:background="@color/white"
+                android:layout_marginTop="1dp"
+                android:paddingVertical="@dimen/_7sdp"
+                android:paddingHorizontal="@dimen/_11sdp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:src="@drawable/ic_archive"
+                    android:padding="@dimen/_2sdp"
+                    />
+                <TextView
+                    android:id="@+id/dcm_archiveTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Archive"
+                    android:fontFamily="@font/adobe_clean_regular"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_13sdp"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/dcm_blockLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:background="@color/white"
+                android:layout_marginTop="1dp"
+                android:paddingVertical="@dimen/_7sdp"
+                android:paddingHorizontal="@dimen/_11sdp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:src="@drawable/ic_block"
+                    android:padding="@dimen/_2sdp"
+                    />
+
+                <TextView
+                    android:id="@+id/blockTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Block"
+                    android:fontFamily="@font/adobe_clean_regular"
+                    android:textColor="#F0403C"
+                    android:textSize="@dimen/_13sdp"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/dcm_leaveLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:background="@color/white"
+                android:layout_marginTop="1dp"
+                android:paddingVertical="@dimen/_7sdp"
+                android:paddingHorizontal="@dimen/_11sdp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:src="@drawable/ic_leave"
+                    android:padding="@dimen/_2sdp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Leave"
+                    android:fontFamily="@font/adobe_clean_regular"
+                    android:textColor="#F0403C"
+                    android:textSize="@dimen/_13sdp"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    />
+
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="@dimen/_10sdp"
+        app:cardBackgroundColor="@color/yellow"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginHorizontal="@dimen/_10sdp"
+        >
+
+        <TextView
+            android:id="@+id/dcm_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cancel"
+            android:padding="@dimen/_10sdp"
+            android:gravity="center"
+            android:textSize="@dimen/_16sdp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/adobe_clean_regular"
+            />
+    </androidx.cardview.widget.CardView>
+
+
+</LinearLayout>

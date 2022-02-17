@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_marginTop="@dimen/_15sdp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="end">
+        <TextView
+            android:id="@+id/rlp_discount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Discount"
+            android:textSize="@dimen/_12sdp"
+            android:textColor="@color/black"
+            android:background="#5CF5BD"
+            android:paddingVertical="@dimen/_6sdp"
+            android:paddingHorizontal="@dimen/_10sdp"
+            android:gravity="end"
+            android:textAllCaps="true"
+            android:fontFamily="@font/adobe_clean_regular"
+            android:layout_gravity="end"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="@dimen/_10sdp">
+
+        <ImageView
+            android:id="@+id/rlp_feedImage"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:src="@drawable/ic_user_two"
+            android:layout_marginTop="@dimen/_5sdp"/>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginStart="@dimen/_5sdp">
+            <TextView
+                android:id="@+id/rlf_businessName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bussiness Name"
+                android:fontFamily="@font/adobe_clean_bold"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_18sdp"/>
+
+            <TextView
+                android:id="@+id/rlp_date"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="Date and time of post"
+                android:textSize="@dimen/_10sdp"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:layout_marginVertical="@dimen/_2sdp"
+                android:fontFamily="@font/adobe_clean_regular"/>
+
+            <TextView
+                android:id="@+id/rlp_expireIn"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="Expires in 5 days"
+                android:textColor="#989898"
+                android:textStyle="italic"
+                android:textSize="@dimen/_10sdp"
+                android:fontFamily="@font/adobe_clean_regular"/>
+        </LinearLayout>
+        <ImageView
+            android:id="@+id/img_menu"
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:src="@drawable/ic_more"
+            android:padding="@dimen/_6sdp"/>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/post_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:ellipsize="end"
+        android:text=""
+        android:textSize="@dimen/_12sdp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/adobe_clean_bold"
+        android:layout_marginHorizontal="@dimen/_12sdp"
+        android:lineSpacingExtra="@dimen/_5sdp"/>
+
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_marginTop="@dimen/_4sdp"
+       android:orientation="horizontal">
+       <TextView
+           android:id="@+id/rlp_postDesc"
+           android:layout_width="0dp"
+           android:layout_height="wrap_content"
+           android:layout_weight="1"
+           android:ellipsize="end"
+           android:text="Lorem ipsum dolor sit amet, consectetur adipiscina elit, sed do eiusmod tempor"
+           android:textSize="@dimen/_12sdp"
+           android:textColor="@color/black"
+           android:fontFamily="@font/adobe_clean_regular"
+           android:layout_marginHorizontal="@dimen/_12sdp"
+           android:lineSpacingExtra="@dimen/_5sdp"/>
+
+       <TextView
+           android:id="@+id/tv_read_more"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:textColor="@color/black"
+           android:text="read more"
+           android:layout_marginRight="@dimen/_10sdp"
+           android:layout_gravity="bottom"
+           android:fontFamily="@font/adobe_clean_bold"
+           />
+
+
+   </LinearLayout>
+    <LinearLayout
+        android:id="@+id/layout_link"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginHorizontal="@dimen/_12sdp">
+        <TextView
+            android:id="@+id/link_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Shop Now"
+            android:textColor="#339ECD"
+            android:fontFamily="@font/adobe_clean_regular"
+            android:textSize="@dimen/_10sdp"/>
+        <TextView
+            android:id="@+id/tv_copy_link"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Copy link"
+            android:textSize="@dimen/_10sdp"
+            android:textColor="#686868"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:fontFamily="@font/adobe_clean_regular"/>
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_220sdp"
+        android:layout_margin="@dimen/_10sdp"
+        android:visibility="gone"/>
+
+
+    <LinearLayout
+        android:id="@+id/code_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginHorizontal="@dimen/_4sdp"
+        android:gravity="center"
+        android:layout_marginVertical="@dimen/_10sdp">
+
+     <RelativeLayout
+         android:id="@+id/see_code_layout"
+         android:layout_width="0dp"
+         android:layout_height="@dimen/_35sdp"
+         android:layout_weight="1"
+         android:layout_gravity="center">
+
+         <TextView
+             android:id="@+id/rlp_code"
+             android:layout_width="@dimen/_160sdp"
+             android:layout_height="wrap_content"
+             android:text="UO123456789"
+             android:gravity="center_horizontal"
+             android:layout_centerInParent="true"
+             android:background="@drawable/new_post_code"
+             android:paddingVertical="@dimen/_5sdp"
+             android:paddingHorizontal="@dimen/_12sdp"
+             android:layout_marginEnd="@dimen/_12sdp"
+             android:textColor="@color/white"
+             android:textSize="@dimen/_18sdp"
+             android:letterSpacing=".2"
+             android:textAllCaps="true"
+             android:fontFamily="@font/adobe_clean_regular"/>
+
+         <ImageView
+             android:id="@+id/see_more_img"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:layout_alignStart="@+id/rlp_code"
+             android:layout_alignEnd="@+id/rlp_code"
+             android:scaleType="fitXY"
+             android:layout_alignBottom="@+id/rlp_code"
+             android:layout_alignTop="@+id/rlp_code"
+             android:layout_marginRight="@dimen/_40sdp"
+             android:src="@drawable/see_post_code" />
+
+     </RelativeLayout>
+        <TextView
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="wrap_content"
+            android:text="8 people revealed this code"
+            android:layout_gravity="end"
+            android:layout_marginEnd="@dimen/_12sdp"
+            android:textSize="@dimen/_10sdp"
+            android:visibility="gone"
+            android:textColor="@color/black"
+            android:fontFamily="@font/adobe_clean_regular"/>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/post_img"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_150sdp"
+        android:scaleType="centerCrop"
+        android:visibility="gone"
+        android:layout_marginVertical="@dimen/_10sdp"
+        android:layout_marginHorizontal="@dimen/_15sdp"
+        android:src="@drawable/dummy"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:gravity="end">
+        <TextView
+            android:id="@+id/tv_hash_tag"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:textSize="@dimen/_11sdp"
+            android:textColor="#ABABAB"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:layout_height="wrap_content"
+            />
+
+        <ImageView
+            android:layout_width="@dimen/_24sdp"
+            android:layout_height="@dimen/_24sdp"
+            android:src="@drawable/ic_share"
+            android:visibility="invisible"
+            android:padding="@dimen/_3sdp"
+            />
+
+        <ImageView
+            android:id="@+id/img_like"
+            android:layout_width="@dimen/_24sdp"
+            android:layout_height="@dimen/_24sdp"
+            android:src="@drawable/ic_heart"
+            app:tint="@color/black"
+            android:layout_marginHorizontal="@dimen/_10sdp"
+            android:padding="@dimen/_3sdp"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

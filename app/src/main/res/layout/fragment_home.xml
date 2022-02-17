@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/pullToRefresh"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#F2F2F2"
+        android:orientation="vertical"
+        tools:context=".fragments.HomeFragment">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:fontFamily="@font/adobe_clean_bold"
+                android:gravity="center"
+                android:letterSpacing="0.05"
+                android:paddingVertical="@dimen/_6sdp"
+                android:text="UJAMAA"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_24sdp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_1sdp"
+                android:background="@color/white"
+                android:fontFamily="@font/glacial_regular"
+                android:letterSpacing="0.06"
+                android:paddingVertical="@dimen/_6sdp"
+                android:text="ONLINE"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_24sdp" />
+
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/et_search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_12sdp"
+            android:background="@color/white"
+            android:elevation="@dimen/_5sdp"
+            android:ellipsize="end"
+            android:fontFamily="@font/adobe_clean_regular"
+            android:gravity="left"
+            android:hint="@string/search_for_anything_and_everything_by_keyword_or_hashtag"
+            android:imeOptions="actionSearch"
+            android:inputType="text"
+            android:maxLines="1"
+            android:paddingHorizontal="@dimen/_5sdp"
+            android:paddingVertical="@dimen/_10sdp"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_10sdp"
+            app:drawableStartCompat="@drawable/ic_edit_search" />
+
+        <EditText
+            android:id="@+id/et_postal_code"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_12sdp"
+            android:background="@color/white"
+            android:elevation="@dimen/_5sdp"
+            android:fontFamily="@font/adobe_clean_regular"
+            android:gravity="center"
+            android:visibility="gone"
+            android:hint="Enter PostCode"
+            android:imeOptions="actionSearch"
+            android:inputType="text"
+            android:maxLines="1"
+            android:paddingHorizontal="@dimen/_5sdp"
+            android:paddingVertical="@dimen/_10sdp"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_10sdp"
+            app:drawableStartCompat="@drawable/ic_location" />
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:orientation="vertical">
+
+                <androidx.viewpager2.widget.ViewPager2
+                    android:id="@+id/view_pager"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_120sdp"
+                    android:layout_marginStart="@dimen/_15sdp"
+                    android:paddingEnd="@dimen/_20sdp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:orientation="horizontal">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        app:cardCornerRadius="@dimen/_3sdp"
+                        app:cardElevation="@dimen/_3sdp"
+                        app:cardUseCompatPadding="true">
+
+                        <TextView
+                            android:id="@+id/tab_upcoming_event"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#EACD60"
+                            android:fontFamily="@font/adobe_clean_regular"
+                            android:gravity="center"
+                            android:lineSpacingExtra="@dimen/_5sdp"
+                            android:maxLines="2"
+                            android:paddingHorizontal="@dimen/_5sdp"
+                            android:paddingVertical="@dimen/_10sdp"
+                            android:text="Upcoming Events\n Near you"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_12sdp" />
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_8sdp"
+                        android:layout_weight="1"
+                        app:cardCornerRadius="@dimen/_3sdp"
+                        app:cardElevation="@dimen/_3sdp"
+                        app:cardUseCompatPadding="true">
+
+                        <TextView
+                            android:id="@+id/tab_location"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#EACD60"
+                            android:fontFamily="@font/adobe_clean_regular"
+                            android:gravity="center"
+                            android:lineSpacingExtra="@dimen/_5sdp"
+                            android:maxLines="2"
+                            android:paddingHorizontal="@dimen/_5sdp"
+                            android:paddingVertical="@dimen/_10sdp"
+                            android:text="Get local discounts\n and deals"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_12sdp" />
+
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rec_shops"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/_10sdp"
+                    android:orientation="vertical"
+                    android:paddingBottom="@dimen/_60sdp"
+                    android:clipToPadding="false"
+                    app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+                    app:spanCount="2" />
+            </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+    </LinearLayout>
+
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+

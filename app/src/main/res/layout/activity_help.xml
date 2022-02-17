@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F2F2F2">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#C4AA44">
+        <ImageView
+            android:id="@+id/hl_back"
+            android:layout_width="@dimen/_36sdp"
+            android:onClick="backBtnCick"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_back_arrow"
+            android:padding="@dimen/_8sdp"
+            android:layout_gravity="center"
+            app:tint="@color/black"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Help"
+            android:fontFamily="@font/adobe_clean_bold"
+            android:gravity="center"
+            android:layout_marginEnd="@dimen/_36sdp"
+            android:textColor="#000000"
+            android:paddingVertical="@dimen/_14sdp"
+            android:textSize="@dimen/_16sdp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/hp_faq"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/tv_faq"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="FAQs"
+            android:textColor="#000000"
+            android:fontFamily="@font/adobe_clean_regular"
+            android:textSize="@dimen/_12sdp"
+            android:padding="@dimen/_12sdp"
+            android:layout_marginTop="@dimen/_2sdp"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_arrow_forward"
+            android:layout_gravity="center"
+            android:layout_marginEnd="@dimen/_10sdp"
+            app:tint="@color/gray_quotes"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:onClick="reportSomthingClick"
+        android:layout_marginTop="@dimen/_2sdp"
+        android:background="@color/white">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Report Something"
+            android:textColor="#000000"
+            android:fontFamily="@font/adobe_clean_regular"
+            android:textSize="@dimen/_12sdp"
+            android:padding="@dimen/_12sdp"
+            android:layout_marginTop="@dimen/_2sdp" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        android:layout_marginTop="@dimen/_2sdp"
+        android:background="@color/white">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Rejected Credential or Verification"
+            android:textColor="#000000"
+            android:fontFamily="@font/adobe_clean_regular"
+            android:textSize="@dimen/_12sdp"
+            android:padding="@dimen/_12sdp"
+            android:layout_marginTop="@dimen/_2sdp"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:onClick="workingClick"
+        android:layout_marginTop="@dimen/_2sdp"
+        android:background="@color/white">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Something Isn't Working"
+            android:textColor="#000000"
+            android:fontFamily="@font/adobe_clean_regular"
+            android:textSize="@dimen/_12sdp"
+            android:padding="@dimen/_12sdp"
+            android:layout_marginTop="@dimen/_2sdp" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:onClick="feedbackClick"
+        android:layout_marginTop="@dimen/_2sdp"
+        android:background="@color/white">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="General Help or Feedback"
+            android:textColor="#000000"
+            android:fontFamily="@font/adobe_clean_regular"
+            android:textSize="@dimen/_12sdp"
+            android:padding="@dimen/_12sdp"
+            android:layout_marginTop="@dimen/_2sdp"/>
+
+    </LinearLayout>
+</LinearLayout>

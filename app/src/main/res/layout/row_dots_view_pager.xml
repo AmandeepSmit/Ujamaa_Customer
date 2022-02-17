@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:paddingHorizontal="@dimen/_12sdp"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/adobe_clean_bold"
+        android:text="Find Anything"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_13sdp" />
+
+    <TextView
+        android:id="@+id/tv_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:fontFamily="@font/adobe_clean_regular"
+        android:gravity="center"
+        android:lineSpacingExtra="@dimen/_4sdp"
+        android:text="Find various products, services and content from thousands of Black-owned businesses across the UK."
+        android:textColor="@color/white"
+        android:textSize="@dimen/_11sdp" />
+
+</LinearLayout>
